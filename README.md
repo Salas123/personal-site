@@ -1,6 +1,6 @@
 # Personal Site:
 
-##Contents:
+## Contents:
 - Introduction/ About Me
 - Projects
 - Contact Me 
