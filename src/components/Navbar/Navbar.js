@@ -1,9 +1,13 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import './Navbar.css';
 import {Link} from "react-router-dom";
 
 function Navbar (){
-
+    /* TODO:
+    *   -Have a function that keeps the underline on the section that is selected
+    *
+    *
+    * */
     const[click, setClick] = useState(false);
 
     const handleMenuClick = () => setClick(!click);
@@ -14,7 +18,7 @@ function Navbar (){
         <>
         <nav className='navbar'>
             <div className='navbar-container'>
-                <Link to='/intro' className='navbar-logo' onClick={closeMobileMenu}>
+                <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                     JSII
                 </Link>
             </div>
@@ -23,7 +27,7 @@ function Navbar (){
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item">
-                        <Link to='/intro' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                             About Me
                         </Link>
                     </li>
