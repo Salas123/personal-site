@@ -1,17 +1,22 @@
 import React from 'react';
-import '../App.css';
+import './Projects.css';
 
-/*
-* TODO:
-*  - Find and picture for background
-*
-* */
+
 
 const Projects = () => {
+    /*
+    * TODO:
+    *  - Add some basic responsiveness when resizing the windows
+    * */
     return(
-        <>
-            <h1 className='projects'>This is where my projects will go</h1>
-        </>
+        <div className='projects'>
+            <div className='carousel-container'>
+                <h1>ENGINEERING SECTION</h1>
+            </div>
+            <div className='carousel-container'>
+                <h1>ART SECTION</h1>
+            </div>
+        </div>
     )
 }
 

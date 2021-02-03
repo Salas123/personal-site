@@ -5,9 +5,9 @@ import IntroSection from "../components/IntroSection";
 
 function Intro(){
     return(
-        <>
+        <div className='intro'>
             <IntroSection/>
-        </>
+        </div>
     );
 }
 

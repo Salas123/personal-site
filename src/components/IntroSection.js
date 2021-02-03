@@ -7,6 +7,7 @@ function IntroSection(){
     /*
     * TODO:
     *  - Add more to introduction paragraph
+    *  - Need to fix paragraphs when being responsive, move them up so they don't cover me in the video
     *
     *
     * */

@@ -1,15 +1,22 @@
 import React from 'react';
-import '../App.css';
+import './ContactMe.css';
 /*
 * TODO:
-*  - Find and picture for background
+*  - Resize profile pic sizes so they can fit within the contact me container
 *
 * */
 const ContactMe = () =>
 {
 
     return(
-        <h1 className='contact-me'>This is where my contact me content will go</h1>
+        <div className='contact-me'>
+
+            <div className='contact-me-container'>
+                <h1>CONTACT ME</h1>
+                <i className="fas fa-envelope-open-text fa-2x"/>
+            </div>
+        </div>
+
     );
 }
 
