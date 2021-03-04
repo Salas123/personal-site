@@ -18,9 +18,7 @@
 .env.test.local
 .env.production.local
 .eslintcache
-.idea/inspectionProfiles/
-.idea/vcs.xml
-.idea/workspace.xml
+.idea/
 
 
 npm-debug.log*
