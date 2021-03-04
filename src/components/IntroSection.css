@@ -47,7 +47,8 @@
 @media screen and (max-width: 960px)
 {
     .name-header {
-        font-size: 20vw;
+        font-size: 15vw;
+        margin-top: 250px;
     }
 }
 

@@ -33,7 +33,7 @@
 
 .about-me-container> .container-divider{
     border-bottom: white solid;
-    width: 10%;
+    width: 20%;
     align-self: center;
     margin-top: 15px;
 }
@@ -46,4 +46,23 @@
     text-align: center;
     padding: 20px;
     width: 80%;
+}
+
+@media screen and (max-width: 960px)
+{
+    .about-me-header{
+        font-size: 15vw;
+    }
+
+    .about-me-text-container{
+        font-size: 5vw;
+    }
+
+    .about-me-container> .container-divider{
+        width: 30%;
+    }
+
+    .about-me-text-container{
+        width: 100%;
+    }
 }
