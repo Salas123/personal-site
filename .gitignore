@@ -20,6 +20,7 @@
 .eslintcache
 .idea/inspectionProfiles/
 .idea/vcs.xml
+.idea/workspace.xml
 
 
 npm-debug.log*

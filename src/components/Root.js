@@ -10,7 +10,7 @@ const Root = () =>{
     return(
         <div className='root-container'>
             <Navbar/>
-            <video src='public/videos/background-vid.mp4' autoPlay loop muted/>
+            <video src='/videos/background-vid.mp4' autoPlay loop muted/>
             <IntroSection/>
             <AboutMeSection/>
             <ProjectsSection/>
