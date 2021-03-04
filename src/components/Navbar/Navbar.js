@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import './Navbar.css';
-import {Link} from "react-router-dom";
+import {HashLink} from "react-router-hash-link";
+
 
 function Navbar (){
     /* TODO:
@@ -8,6 +9,8 @@ function Navbar (){
     *
     *
     * */
+
+
     const[click, setClick] = useState(false);
 
     const handleMenuClick = () => setClick(!click);
@@ -15,35 +18,33 @@ function Navbar (){
     const closeMobileMenu = () => setClick(false);
 
     return(
-        <>
         <nav className='navbar'>
             <div className='navbar-container'>
-                <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+                <HashLink to='/#IntroSection' className='navbar-logo' onClick={closeMobileMenu} smooth>
                     JSII
-                </Link>
+                </HashLink>
             </div>
             <div className='menu-icon' onClick={handleMenuClick}>
                 <i className={click ? "fas fa-minus" : "fas fa-ellipsis-v"}/>
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item">
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <HashLink to='/#AboutMeSection' className='nav-links' onClick={closeMobileMenu} smooth>
                             About Me
-                        </Link>
+                        </HashLink>
                     </li>
                     <li className="nav-item">
-                        <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                        <HashLink to='/#ProjectsSection' className='nav-links' onClick={closeMobileMenu} smooth>
                             Projects
-                        </Link>
+                        </HashLink>
                     </li>
                     <li className="nav-item">
-                        <Link to='/contact-me' className='nav-links' onClick={closeMobileMenu}>
+                        <HashLink to='/#ContactMeSection' className='nav-links' onClick={closeMobileMenu} smooth>
                             Contact Me
-                        </Link>
+                        </HashLink>
                     </li>
             </ul>
         </nav>
-        </>
     );
 }
 
