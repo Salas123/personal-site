@@ -8,12 +8,18 @@ const ContactMeSection = () =>{
             <div className='container-divider'/>
             <div className='contact-me-text-container'>
                 <p>
-                    I am always looking for interesting projects to collaborate on. For any ideas, inquiries, or to view my resume
-                    please email here and I'll get back to you!
+                    I am always looking for new and interesting projects to collaborate on. For any ideas, inquiries, or to view my resume
+                    please email and I'll get back to you!
                 </p>
-                <p>
-                    Email: email goes here
-                </p>
+                <div className="email-text-wrapper">
+                    <p>
+                        Email:
+                    </p>
+                    <p className="email-text-paragraph">
+                        salasii@gmail.com
+                    </p>
+                </div>
+
             </div>
         </div>
     );

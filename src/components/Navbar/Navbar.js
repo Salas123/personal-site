@@ -10,6 +10,12 @@ function Navbar (){
     *
     * */
 
+    const scrollWithOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -80;
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+    }
+
 
     const[click, setClick] = useState(false);
 
@@ -20,7 +26,7 @@ function Navbar (){
     return(
         <nav className='navbar'>
             <div className='navbar-container'>
-                <HashLink to='/#IntroSection' className='navbar-logo' onClick={closeMobileMenu} smooth>
+                <HashLink to='/#IntroSection' className='navbar-logo' onClick={closeMobileMenu} scroll={el => scrollWithOffset(el)}>
                     JSII
                 </HashLink>
             </div>
@@ -29,17 +35,17 @@ function Navbar (){
             </div>
             <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item">
-                        <HashLink to='/#AboutMeSection' className='nav-links' onClick={closeMobileMenu} smooth>
+                        <HashLink to='/#AboutMeSection' className='nav-links' onClick={closeMobileMenu} scroll={el => scrollWithOffset(el)}>
                             About Me
                         </HashLink>
                     </li>
                     <li className="nav-item">
-                        <HashLink to='/#ProjectsSection' className='nav-links' onClick={closeMobileMenu} smooth>
+                        <HashLink to='/#ProjectsSection' className='nav-links' onClick={closeMobileMenu} scroll={el => scrollWithOffset(el)}>
                             Projects
                         </HashLink>
                     </li>
                     <li className="nav-item">
-                        <HashLink to='/#ContactMeSection' className='nav-links' onClick={closeMobileMenu} smooth>
+                        <HashLink to='/#ContactMeSection' className='nav-links' onClick={closeMobileMenu} scroll={el => scrollWithOffset(el)}>
                             Contact Me
                         </HashLink>
                     </li>

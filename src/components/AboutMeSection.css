@@ -20,7 +20,6 @@
     align-content: center;
     text-align: center;
     justify-content: center;
-    animation: 1s ease-out 0s 1 slideInFromBelow;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.2);
 }
 
@@ -29,6 +28,7 @@
     font-size: 100px;
     width: 100%;
     align-self: center;
+    animation: 1s ease-out 0s 1 slideInFromBelow;
 }
 
 .about-me-container> .container-divider{
@@ -46,6 +46,7 @@
     text-align: center;
     padding: 20px;
     width: 80%;
+    animation: 1s ease-out 0s 1 slideInFromBelow;
 }
 
 @media screen and (max-width: 960px)
