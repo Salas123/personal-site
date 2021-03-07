@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4845ae8-068f-474e-9f2e-401a946725d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/cardImages/calendarGUI.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/cardImages/eyeOfLondon.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMeSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMeSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AboutMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AboutMeSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardComponents/CardItem.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardComponents/CardItem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CardComponents/Cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CardComponents/Cards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactMeSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactMeSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactMeSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/IntroSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/IntroSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectsSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ProjectsSection.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +97,7 @@
       <workItem from="1614882917691" duration="11240000" />
       <workItem from="1614897008095" duration="9574000" />
       <workItem from="1614918068085" duration="12730000" />
-      <workItem from="1615053427350" duration="6954000" />
+      <workItem from="1615053427350" duration="7663000" />
     </task>
     <servers />
   </component>
