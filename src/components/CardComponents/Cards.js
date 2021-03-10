@@ -101,7 +101,7 @@ const Cards = () =>{
                                 Photo Portfolio
                             </Typography>
                             <Typography className={classes.cardTextArea} variant="body2" color="textSecondary" component="p">
-                                This is a personally curation by me of some of my personally best shots.
+                                This is my photo portfolio that has been personally curated by me and shows some of my best shots
                             </Typography>
                         </CardContent>
                     </CardActionArea>
