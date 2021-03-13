@@ -49,14 +49,24 @@
     animation: 1s ease-out 0s 1 slideInFromBelow;
 }
 
+
+
+@media screen and (max-width: 1200px){
+
+    .about-me-header{
+        font-size: 10vw;
+    }
+}
+
+
 @media screen and (max-width: 960px)
 {
     .about-me-header{
-        font-size: 15vw;
+        font-size: 8vw;
     }
 
     .about-me-text-container{
-        font-size: 5vw;
+        font-size: 3vw;
     }
 
     .about-me-container> .container-divider{
