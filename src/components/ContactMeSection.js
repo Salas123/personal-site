@@ -34,8 +34,9 @@ const ContactMeSection = () =>{
                             </p>
                         </div>
                         <form noValidate autoComplete="on">
-                            <TextField className="textfield-component" id="standard-basic" label="Your Full Name Here" color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}}/>
-                            <TextField className="textfield-component" id="standard-basic" label="Your Email Here"  color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}}/>
+                            <TextField className="textfield-component" id="standard-basic" label="Full Name" color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}}/>
+                            <TextField className="textfield-component" id="standard-basic" label="Email"  color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}}/>
+                            <TextField className="textfield-component" id="standard-basic" label="Subject of Message"  color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}}/>
                         </form>
                         <form noValidate autoComplete="off">
                             <TextField
