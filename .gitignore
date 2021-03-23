@@ -18,7 +18,8 @@
 .env.test.local
 .env.production.local
 .eslintcache
-.idea/
+/.idea
+/.idea/workspace.xml
 
 
 npm-debug.log*
