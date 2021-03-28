@@ -95,7 +95,7 @@ export default class ContactMeSection extends Component {
         console.log(formToSubmit);
 
 
-        axios.post('https://www.jsii.page/add', formToSubmit)
+        axios.post('https://www.jsii.page/', formToSubmit)
             .then(res => console.log(res.data))
             .catch(err => console.log("Error: " + err))
     }
