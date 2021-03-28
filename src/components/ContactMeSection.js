@@ -95,7 +95,7 @@ export default class ContactMeSection extends Component {
         console.log(formToSubmit);
 
 
-        axios.post('https://www.jsii.page/', formToSubmit)
+        axios.post('https://sheltered-atoll-54713.herokuapp.com/add', formToSubmit)
             .then(res => console.log(res.data))
             .catch(err => console.log("Error: " + err))
     }
