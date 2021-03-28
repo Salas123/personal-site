@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './ContactMeSection.css';
 import {Button, Container, Grid, TextField} from "@material-ui/core";
+import axios from "axios";
 // import {makeStyles} from "@material-ui/styles";
 
 // const useStyles = makeStyles((theme) => ({
@@ -12,14 +13,98 @@ import {Button, Container, Grid, TextField} from "@material-ui/core";
 //     },
 // }));
 
-const ContactMeSection = () =>{
+
+export default class ContactMeSection extends Component {
 
     // const classes = useStyles();
 
 
-    return(
-        <div className='contact-container' id="ContactMeSection">
-            <Container className="contact-me-form-container"  fixed>
+    constructor(props) {
+        super(props);
+
+      this.onChangeFullName = this.onChangeEmail.bind(this);
+      this.onChangeSubject = this.onChangeSubject.bind(this);
+      this.onChangeEmail = this.onChangeEmail.bind(this);
+      this.onChangeMessage = this.onChangeMessage.bind(this);
+      this.onSubmit = this.onSubmit.bind(this);
+
+      this.state ={
+          fullName:'',
+          subject:'',
+          email:'',
+          message:'',
+      };
+    }
+
+    componentDidMount() {
+        this.setState({
+            fullName:'test user'
+        })
+    }
+
+    onChangeFullName(e){
+        this.setState({
+            fullName: e.target.value
+        });
+    }
+
+    onChangeSubject(e){
+        this.setState({
+            subject: e.target.value
+        });
+    }
+
+    onChangeEmail(e){
+        this.setState({
+            email: e.target.value
+        });
+    }
+
+    onChangeMessage(e){
+        this.setState({
+            message: e.target.value
+        });
+    }
+
+    onSubmit(e){
+        e.preventDefault();
+
+        if(this.state.fullName === "")
+        {
+            alert("Need a name to submit!")
+            return;
+        }
+        if(this.state.email === "")
+        {
+            alert("Need an email to submit!")
+            return;
+        }
+        if(this.state.message ==="")
+        {
+            alert("Please add a message before submitting!")
+            return;
+        }
+
+        let formToSubmit = {
+            fullName: this.state.fullName,
+            subject: this.state.subject,
+            email: this.state.email,
+            message: this.state.message
+        }
+
+        console.log(formToSubmit);
+
+
+        axios.post('http://localhost:5000/add', formToSubmit)
+            .then(res => console.log(res.data))
+            .catch(err => console.log("Error: " + err))
+    }
+
+
+    render() {
+        return(
+            <div className='contact-container' id="ContactMeSection">
+                <Container className="contact-me-form-container"  fixed>
                     <Grid
                         container
                         direction="column"
@@ -34,9 +119,9 @@ const ContactMeSection = () =>{
                             </p>
                         </div>
                         <form noValidate autoComplete="on">
-                            <TextField className="textfield-component" id="standard-basic" label="Full Name" color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}}/>
-                            <TextField className="textfield-component" id="standard-basic" label="Email"  color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}}/>
-                            <TextField className="textfield-component" id="standard-basic" label="Subject of Message"  color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}}/>
+                            <TextField className="textfield-component" id="standard-basic" label="Full Name" color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}} onChange={this.onChangeFullName}/>
+                            <TextField className="textfield-component" id="standard-basic" label="Email"  color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}} onChange={this.onChangeEmail}/>
+                            <TextField className="textfield-component" id="standard-basic" label="Subject of Message"  color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}} onChange={this.onChangeSubject} />
                         </form>
                         <form noValidate autoComplete="off">
                             <TextField
@@ -50,13 +135,14 @@ const ContactMeSection = () =>{
                                 variant="outlined"
                                 margin="normal"
                                 InputProps={{className:"textfield-message-body"}} InputLabelProps={{className: "textfield__label"}}
+                                onChange={this.onChangeMessage}
                             />
                         </form>
-                        <Button className="submit-button" variant="outlined" color="secondary">Submit</Button>
+                        <Button className="submit-button" variant="outlined" color="secondary" onClick={this.onSubmit} >Submit</Button>
                     </Grid>
-            </Container>
-        </div>
-    );
-}
+                </Container>
+            </div>
+        );
 
-export default ContactMeSection;
+    }
+}

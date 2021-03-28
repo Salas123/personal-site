@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a4845ae8-068f-474e-9f2e-401a946725d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ContactMeSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactMeSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ContactMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ContactMeSection.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -25,6 +27,14 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1nXzUWUr88UNRs0NxL8bVhhCeOK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -108,6 +118,9 @@
       <workItem from="1615593173665" duration="4302000" />
       <workItem from="1615677182966" duration="2560000" />
       <workItem from="1615919461201" duration="11740000" />
+      <workItem from="1616780885051" duration="59000" />
+      <workItem from="1616780986134" duration="14418000" />
+      <workItem from="1616957532478" duration="4816000" />
     </task>
     <servers />
   </component>
