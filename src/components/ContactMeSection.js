@@ -2,27 +2,15 @@ import React, {Component} from 'react';
 import './ContactMeSection.css';
 import {Button, Container, Grid, TextField} from "@material-ui/core";
 import axios from "axios";
-// import {makeStyles} from "@material-ui/styles";
-
-// const useStyles = makeStyles((theme) => ({
-//     root: {
-//         '& > *': {
-//             margin: theme.spacing(1),
-//             width: '25ch',
-//         },
-//     },
-// }));
 
 
-export default class ContactMeSection extends Component {
 
-    // const classes = useStyles();
-
+class ContactMeSection extends Component {
 
     constructor(props) {
         super(props);
 
-      this.onChangeFullName = this.onChangeEmail.bind(this);
+      this.onChangeFullName = this.onChangeFullName.bind(this);
       this.onChangeSubject = this.onChangeSubject.bind(this);
       this.onChangeEmail = this.onChangeEmail.bind(this);
       this.onChangeMessage = this.onChangeMessage.bind(this);
@@ -33,16 +21,19 @@ export default class ContactMeSection extends Component {
           subject:'',
           email:'',
           message:'',
+          formSubmitted: false,
       };
     }
 
     componentDidMount() {
-        this.setState({
-            fullName:'test user'
-        })
+       this.setState({
+           fullName:'test user',
+       });
     }
 
-    onChangeFullName(e){
+    onChangeFullName(e) {
+
+        console.log('Entered full name function...');
         this.setState({
             fullName: e.target.value
         });
@@ -58,6 +49,8 @@ export default class ContactMeSection extends Component {
         this.setState({
             email: e.target.value
         });
+
+        console.log('Entered email function...');
     }
 
     onChangeMessage(e){
@@ -89,22 +82,31 @@ export default class ContactMeSection extends Component {
             fullName: this.state.fullName,
             subject: this.state.subject,
             email: this.state.email,
-            message: this.state.message
+            message: this.state.message,
         }
 
         console.log(formToSubmit);
 
-        alert("Submitting message!")
-        axios.post('http://localhost:5000/add', formToSubmit)
+        this.setState({
+            formSubmitted : true
+        });
+
+        console.log('Form submitted value: ' + this.state.formSubmitted);
+        console.log(formToSubmit);
+
+        axios.post('https://localhost:5000/add', formToSubmit)
             .then(res => console.log(res.data))
             .catch(err => console.log("Error: " + err))
     }
 
 
+
+
     render() {
         return(
             <div className='contact-container' id="ContactMeSection">
-                <Container className="contact-me-form-container"  fixed>
+
+                {!this.state.formSubmitted && <Container className="contact-me-form-container" fixed>
                     <Grid
                         container
                         direction="column"
@@ -118,12 +120,10 @@ export default class ContactMeSection extends Component {
                                 please email me at my email below and I'll get back to you!
                             </p>
                         </div>
-                        <form noValidate autoComplete="on">
+                        <form noValidate autoComplete="off">
                             <TextField className="textfield-component" id="standard-basic" label="Full Name" color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}} onChange={this.onChangeFullName}/>
                             <TextField className="textfield-component" id="standard-basic" label="Email"  color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}} onChange={this.onChangeEmail}/>
                             <TextField className="textfield-component" id="standard-basic" label="Subject of Message"  color="secondary" margin="normal" variant="filled" InputProps={{className:"textfield__body"}} InputLabelProps={{className: "textfield__label"}} onChange={this.onChangeSubject} />
-                        </form>
-                        <form noValidate autoComplete="off">
                             <TextField
                                 className="textfield-component"
                                 id="outlined-multiline-static"
@@ -138,11 +138,17 @@ export default class ContactMeSection extends Component {
                                 onChange={this.onChangeMessage}
                             />
                         </form>
-                        <Button className="submit-button" variant="outlined" color="secondary" onClick={this.onSubmit} >Submit</Button>
+                        <Button className="submit-button" variant="outlined" color="secondary" onClick={this.onSubmit}>Submit</Button>
                     </Grid>
-                </Container>
+                </Container>}
+                {this.state.formSubmitted && <div className="confirmation-message-container">
+                    <h1 className="confirmation-message-header">Thank you for the form submission,</h1>
+                    <h1 className="confirmation-message-header">will get back to you shortly via email!</h1>
+                </div>}
             </div>
         );
 
     }
 }
+
+export default ContactMeSection;
