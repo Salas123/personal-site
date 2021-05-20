@@ -61,7 +61,23 @@
     align-self: center;
 }
 
+.confirmation-message-container
+{
+    background: rgba(48,54,54,0.55);
+    box-shadow: 2px 2px 2px rgba(48,54,54,0.94);
+    display: flex;
+    flex-direction: column;
+    text-align: justify-all;
+    width: fit-content;
+    align-self: center;
+    padding: 20px;
 
+}
+
+.confirmation-message-header
+{
+    color: #ffffff;
+}
 @media screen and (max-width: 960px)
 {
     .contact-me-header{
