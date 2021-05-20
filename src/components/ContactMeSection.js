@@ -94,7 +94,7 @@ class ContactMeSection extends Component {
         console.log('Form submitted value: ' + this.state.formSubmitted);
         console.log(formToSubmit);
 
-        axios.post('https://localhost:5000/add', formToSubmit)
+        axios.post('https://jsii.page/add', formToSubmit)
             .then(res => console.log(res.data))
             .catch(err => console.log("Error: " + err))
     }
