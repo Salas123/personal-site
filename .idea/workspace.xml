@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4845ae8-068f-474e-9f2e-401a946725d4" name="Default Changelist" comment="" />
+    <list default="true" id="a4845ae8-068f-474e-9f2e-401a946725d4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +33,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1nXzUWUr88UNRs0NxL8bVhhCeOK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -42,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images/cardImages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -121,6 +126,13 @@
       <workItem from="1621305092303" duration="7360000" />
       <workItem from="1621358624601" duration="216000" />
       <workItem from="1621363437307" duration="3321000" />
+      <workItem from="1622611812596" duration="29000" />
+      <workItem from="1622611885631" duration="1048000" />
+      <workItem from="1622689171817" duration="1534000" />
+      <workItem from="1638336672121" duration="242000" />
+      <workItem from="1638911639308" duration="137000" />
+      <workItem from="1638911825178" duration="23000" />
+      <workItem from="1644861473283" duration="620000" />
     </task>
     <servers />
   </component>
@@ -149,6 +161,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
