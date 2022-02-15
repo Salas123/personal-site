@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto+Slab:wght@700&display=swap');
+
+.IntroSectionContainer{
+    display: flex;
+    flex-direction: column;
+    background: #7FA5CC;
+}
+
+.topContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60%;
+}
+.bottomContainer{
+    height: 40%;
+    width: 25%;
+    align-self: center;
+}
+
+.buttonContainer{
+    border: 2px solid #faf8f8;
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    margin: auto;
+    border-radius: 8px;
+    border-bottom-style: none;
+}
+
+.buttonContainer:hover{
+    background: #686363;
+}
+
+.leftContainer{
+    width: 50%;
+    text-align: center;
+}
+
+.fullNameHeader{
+    font-size: 100px;
+    font-family: 'Righteous', cursive;
+    color: #faf8f8;
+    margin-bottom: 10px;
+}
+.rightContainer{
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+.profilePic{
+    height: 25%;
+}
+
+.buttonIcon{
+    max-height: 100%;
+    max-width: 100%;
+    align-self: center;
+}
+
+p{
+    height: 3vh;
+    font-family: 'Righteous', cursive;
+    color: #faf8f8;
+}
+
+.buttonIconContainer{
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    margin: auto;
+}
+
+.buttonTextContainer{
+    margin-top: 10px;
+    margin-left: 4px;
+}
+
