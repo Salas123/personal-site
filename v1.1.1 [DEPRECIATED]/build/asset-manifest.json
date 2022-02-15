@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.55f96abe.chunk.css",
+    "main.js": "/static/js/main.bc20b8b2.chunk.js",
+    "main.js.map": "/static/js/main.bc20b8b2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.80c92704.js",
+    "runtime-main.js.map": "/static/js/runtime-main.80c92704.js.map",
+    "static/js/2.d75e8c67.chunk.js": "/static/js/2.d75e8c67.chunk.js",
+    "static/js/2.d75e8c67.chunk.js.map": "/static/js/2.d75e8c67.chunk.js.map",
+    "static/js/3.c163b288.chunk.js": "/static/js/3.c163b288.chunk.js",
+    "static/js/3.c163b288.chunk.js.map": "/static/js/3.c163b288.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.55f96abe.chunk.css.map": "/static/css/main.55f96abe.chunk.css.map",
+    "static/js/2.d75e8c67.chunk.js.LICENSE.txt": "/static/js/2.d75e8c67.chunk.js.LICENSE.txt",
+    "static/media/calendarGUI.6b044596.png": "/static/media/calendarGUI.6b044596.png",
+    "static/media/eyeOfLondon.ef7b3a41.JPG": "/static/media/eyeOfLondon.ef7b3a41.JPG",
+    "static/media/seniorProjec2.c4fd1f81.png": "/static/media/seniorProjec2.c4fd1f81.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.80c92704.js",
+    "static/js/2.d75e8c67.chunk.js",
+    "static/css/main.55f96abe.chunk.css",
+    "static/js/main.bc20b8b2.chunk.js"
+  ]
+}
