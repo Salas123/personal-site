@@ -1,3 +1,17 @@
-.App {
+body{
+    margin: 0;
+}
+
+h1{
+
+    font-size: 140px;
+    font-family: 'Righteous', cursive;
+    color: #faf8f8;
+}
+
+
+h2{
+    font-family: 'Righteous', cursive;
+    color: #6fa4d8;
 }
 

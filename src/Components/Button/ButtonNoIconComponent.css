@@ -1,0 +1,21 @@
+.ButtonNoIconContainer{
+    margin-top: 10px;
+    align-self: center;
+    background-color: coral;
+    height: 50px;
+    width: 100px;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #686363;
+}
+
+.ButtonNoIconWrapper{
+    margin-top: 5px;
+    height: inherit;
+}
+
+
+.ButtonNoIconContainer:hover{
+    background-color: #947bea;
+}

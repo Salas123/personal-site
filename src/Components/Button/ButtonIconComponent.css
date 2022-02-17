@@ -1,0 +1,33 @@
+.buttonIcon{
+    max-height: 100%;
+    max-width: 100%;
+    align-self: center;
+}
+
+.buttonContainer{
+    border: 2px solid #faf8f8;
+    background-color: coral;
+    display: flex;
+    flex-direction: row;
+    width: 25%;
+    height: 70px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+.buttonContainer:hover{
+    background: #686363;
+}
+
+
+.buttonIconContainer{
+    height: 30px;
+    width: 30px;
+    align-self: center;
+    margin: auto;
+}
+
+.buttonTextContainer{
+    margin-top: 10px;
+    margin-left: 4px;
+}

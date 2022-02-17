@@ -4,37 +4,26 @@
     display: flex;
     flex-direction: column;
     background: #7FA5CC;
+    height: 800px;
 }
 
 .topContainer{
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 60%;
+    height: 90%;
 }
 .bottomContainer{
-    height: 40%;
+    height: 10%;
     width: 25%;
     align-self: center;
 }
 
-.buttonContainer{
-    border: 2px solid #faf8f8;
-    display: flex;
-    flex-direction: row;
-    width: 25%;
-    margin: auto;
-    border-radius: 8px;
-    border-bottom-style: none;
-}
-
-.buttonContainer:hover{
-    background: #686363;
-}
-
 .leftContainer{
     width: 50%;
+    align-self: center;
     text-align: center;
+    justify-content: center;
 }
 
 .fullNameHeader{
@@ -45,18 +34,14 @@
 }
 .rightContainer{
     width: 50%;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
+    align-self: center;
 }
 
 .profilePic{
     height: 25%;
-}
-
-.buttonIcon{
-    max-height: 100%;
-    max-width: 100%;
-    align-self: center;
+    width: 25%;
 }
 
 p{
@@ -65,15 +50,4 @@ p{
     color: #faf8f8;
 }
 
-.buttonIconContainer{
-    height: 30px;
-    width: 30px;
-    align-self: center;
-    margin: auto;
-}
-
-.buttonTextContainer{
-    margin-top: 10px;
-    margin-left: 4px;
-}
 
