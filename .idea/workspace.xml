@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4845ae8-068f-474e-9f2e-401a946725d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/insta-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/linkedIn-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/twitter-icon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/IntroSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/IntroSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/IntroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/IntroSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ProjectsSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ProjectsSection.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +139,7 @@
       <workItem from="1644861473283" duration="3287000" />
       <workItem from="1644950329653" duration="8770000" />
       <workItem from="1645040819649" duration="15144000" />
-      <workItem from="1645130133456" duration="7234000" />
+      <workItem from="1645130133456" duration="10812000" />
     </task>
     <servers />
   </component>
@@ -166,7 +162,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/salas123-backend-schema" />
+                        <option value="origin/IntroSection-Feature" />
                       </list>
                     </value>
                   </entry>

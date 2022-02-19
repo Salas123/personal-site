@@ -17,10 +17,28 @@
 
 .AboutMeLeftContainer{
     width: 50%;
-    padding: initial;
     justify-content: center;
     align-self: center;
-    text-align: center;
+    text-align: justify-all;
+}
+
+.AboutMeTextWrapper{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 100%;
+    margin: auto;
+}
+
+
+.AboutMeParagraphHeader{
+    margin: 0;
+    align-self: flex-start;
+    font-size: 60px;
+}
+
+.AboutMeParagraph{
+    height: 60px;
 }
 
 .AboutMeRightContainer{

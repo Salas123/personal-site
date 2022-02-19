@@ -7,24 +7,21 @@ const AboutMeSection = () =>{
         <div className={'AboutMeSectionContainer'}>
             <div className={'topContainer'}>
                 <div className={'AboutMeLeftContainer'}>
-                    <p className={'AboutMeParagraph'}>
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                        Hello There This Is Sample Text Hello There This Is Sample Text Hello There This Is Sample Text
-                    </p>
+                    <div className={'AboutMeTextWrapper'}>
+                        <h1 className={'AboutMeParagraphHeader'}>Hey there,</h1>
+                        <p className={'AboutMeParagraph'}>
+                            My name is Jesus Salas II. I made this page initially as a resume buffer, however, upon further reflection I realize I
+                            have the chance to create a platform around myself. I am proud to say that I graduated with my bachelors of science in computer science from
+                            UC Riverside and along with graduating I worked on some great embedded systems projects as
+                            well as worked on some non-CS work like photography and video editing. As I'm slowly progressing in my career with Software Engineering,
+                            I am also still working on other side projects.
+                        </p>
+                        <p className={'AboutMeParagraph'}>
+                            I love to create and I love the collaborative process that comes with it. I find the idea of a shared vision and optimism to create
+                            something that generates inspiration in others to do same to be a very rewarding endeavor. My goal in this platform is to hopefully at least get
+                            close to that endeavor and to hopefully meet with others down the line and collaborate on shared projects.
+                        </p>
+                    </div>
                 </div>
                 <div className={'AboutMeRightContainer'}>
                     <h1 className={'AboutMeHeader'}>About Me</h1>
