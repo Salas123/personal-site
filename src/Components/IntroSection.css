@@ -6,6 +6,11 @@
     background: #7FA5CC;
     height: 800px;
     justify-content: center;
+    width: 100%;
+}
+
+.personParaDescriptor{
+    font-size: 2vh;
 }
 
 .topContainer{
@@ -28,10 +33,11 @@
 }
 
 .fullNameHeader{
-    font-size: 200px;
+    font-size: 7vw;
     font-family: 'Righteous', cursive;
     color: #faf8f8;
     margin-bottom: 10px;
+    width: 100%;
 }
 .rightContainer{
     width: 50%;
@@ -45,10 +51,29 @@
     width: 45%;
 }
 
-p{
-    height: 3vh;
-    font-family: 'Righteous', cursive;
-    color: #faf8f8;
+
+@media screen and (max-width: 1600px) {
+    .IntroSectionContainer{
+        height: fit-content;
+    }
+    .topContainer{
+        flex-direction: column;
+    }
+    .leftContainer{
+        width: 100%;
+    }
+    .rightContainer{
+        width: 100%;
+    }
 }
+
+
+@media screen and (max-width: 896px) {
+
+    .fullNameHeader{
+        font-size: 100px;
+    }
+}
+
 
 

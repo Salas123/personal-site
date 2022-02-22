@@ -1,16 +1,18 @@
 .AboutMeSectionContainer{
     background: #6f6f68;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     height: 500px;
 }
 
+.AboutMeTopContainer{
+    display: flex;
+    flex-direction: row;
+}
+
 .AboutMeHeader{
-    /*font-size: 140px;*/
-    /*font-family: 'Righteous', cursive;*/
-    /*color: #faf8f8;*/
-    width: 750px;
+    font-size: 150px;
     margin: auto;
     padding-bottom: 20px;
 }
@@ -37,10 +39,6 @@
     font-size: 60px;
 }
 
-.AboutMeParagraph{
-    height: 60px;
-}
-
 .AboutMeRightContainer{
     width: 50%;
     justify-content: center;
@@ -52,4 +50,42 @@
     width: 750px;
     margin: auto;
 
+}
+
+@media screen and (max-width: 1600px) {
+    .AboutMeSectionContainer{
+        height: fit-content;
+    }
+    .AboutMeHeader{
+        font-size: 100px;
+    }
+    .AboutMeParagraphHeader{
+        font-size: 4vh;
+    }
+    .AboutMeLeftContainer, .AboutMeRightContainer{
+        width: 100%;
+    }
+    .AboutMeLeftContainer{
+        margin-top: 35px;
+    }
+
+    .AboutMeTextWrapper{
+        text-align: justify;
+    }
+
+
+
+    .AboutMeTopContainer{
+        flex-direction: column-reverse;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 896px) {
+    .AboutMeLeftContainer{
+    }
+    .AboutMeRightContainer{
+    }
 }

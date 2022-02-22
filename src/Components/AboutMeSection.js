@@ -5,7 +5,7 @@ import ButtonIconComponent from "./Button/ButtonIconComponent";
 const AboutMeSection = () =>{
     return(
         <div className={'AboutMeSectionContainer'}>
-            <div className={'topContainer'}>
+            <div className={'AboutMeTopContainer'}>
                 <div className={'AboutMeLeftContainer'}>
                     <div className={'AboutMeTextWrapper'}>
                         <h1 className={'AboutMeParagraphHeader'}>Hey there,</h1>
