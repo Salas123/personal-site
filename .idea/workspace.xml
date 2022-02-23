@@ -3,11 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a4845ae8-068f-474e-9f2e-401a946725d4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/IntroSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/IntroSection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Button/ButtonIconComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button/ButtonIconComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Button/ButtonNoIconComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button/ButtonNoIconComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ContactMeSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ContactMeSection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ContactMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ContactMeSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ProjectsSection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ProjectsSection.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +140,7 @@
       <workItem from="1644861473283" duration="3287000" />
       <workItem from="1644950329653" duration="8770000" />
       <workItem from="1645040819649" duration="15144000" />
-      <workItem from="1645130133456" duration="22232000" />
+      <workItem from="1645130133456" duration="29407000" />
     </task>
     <servers />
   </component>
