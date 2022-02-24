@@ -8,6 +8,8 @@ body{
 p{
     font-family: 'Righteous', cursive;
     color: #faf8f8;
+    padding: 0;
+    margin: 0;
 }
 
 

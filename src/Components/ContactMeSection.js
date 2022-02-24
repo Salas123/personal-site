@@ -2,8 +2,17 @@ import React from "react";
 import './ContactMeSection.css';
 import ButtonNoIconComponent from "./Button/ButtonNoIconComponent";
 
-
 const ContactMeSection = () =>{
+    function adjustTextArea(e){
+        let message = e.target.value;
+        if(message.length > 0){
+            e.target.rows = 4;
+        }
+        else{
+            e.target.rows = 2;
+        }
+    }
+
     return(
         <div className={'ContactMeSectionContainer'}>
             <div className={'middleGridContainer'}>
@@ -13,18 +22,20 @@ const ContactMeSection = () =>{
                         <img className={'contact-me-icon'} src={ 'contact-me-icon.svg'} alt={'Contact-Me-Icon'}/>
                     </div>
                     <div className={'middleBoxContainer'}>
-                        <h2>Email</h2>
-                        <input value={'Enter Email Here'}/>
-                        <h2>Message</h2>
-                        <input value={'Enter Message Here'}/>
+                        <form>
+                            <h2 className={'inputHeaders'}>Email</h2>
+                            <input className={'emailInput'} defaultValue={'Enter Email Here'} type='text' />
+                            <h2 className={'inputHeaders'}>Message</h2>
+                            <textarea className={'messageInput'} defaultValue={'Enter Message Here'} rows={2} cols={50} onChange={adjustTextArea} />
+                        </form>
                         <ButtonNoIconComponent buttonText={'Send'}/>
                     </div>
                     <div className={'bottomBoxContainer'}>
                         <div className={'bottomBoxWrapper'}>
                             <p className={'socials-text'}>Checkout my socials!</p>
-                            <img src={'insta-icon.svg'} alt={'Instagram logo'} className={'socialIcons'}/>
-                            <img src={'linkedIn-icon.svg'} alt={'LinkedIn logo'} className={'socialIcons'}/>
-                            <img src={'twitter-icon.svg'} alt={'Twitter logo'} className={'socialIcons'}/>
+                            <a href={'https://www.instagram.com/chipsnsalas/'}><img src={'insta-icon.svg'} alt={'Instagram logo'} className={'socialIcons'}/></a>
+                            <a href={'https://www.linkedin.com/in/jesus-salas-a295a07a/'}><img src={'linkedIn-icon.svg'} alt={'LinkedIn logo'} className={'socialIcons'}/></a>
+                            <a href={'https://twitter.com/Jesus_Salads'}><img src={'twitter-icon.svg'} alt={'Twitter logo'} className={'socialIcons'}/></a>
                         </div>
                     </div>
                 </div>

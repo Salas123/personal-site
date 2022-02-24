@@ -35,8 +35,14 @@
 
 .AboutMeParagraphHeader{
     margin: 0;
+    margin-bottom: 10px;
     align-self: flex-start;
     font-size: 60px;
+}
+
+
+.AboutMeParagraph{
+    margin-bottom: 10px;
 }
 
 .AboutMeRightContainer{
