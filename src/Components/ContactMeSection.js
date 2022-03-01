@@ -36,6 +36,7 @@ const ContactMeSection = () =>{
                             <a href={'https://www.instagram.com/chipsnsalas/'}><img src={'insta-icon.svg'} alt={'Instagram logo'} className={'socialIcons'}/></a>
                             <a href={'https://www.linkedin.com/in/jesus-salas-a295a07a/'}><img src={'linkedIn-icon.svg'} alt={'LinkedIn logo'} className={'socialIcons'}/></a>
                             <a href={'https://twitter.com/Jesus_Salads'}><img src={'twitter-icon.svg'} alt={'Twitter logo'} className={'socialIcons'}/></a>
+                            <a href={'https://github.com/Salas123'}><img src={'github-icon.svg'} alt={'Github logo'} className={'socialIcons'}/></a>
                         </div>
                     </div>
                 </div>

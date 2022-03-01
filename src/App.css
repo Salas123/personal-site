@@ -26,6 +26,10 @@ h2{
     color: #6fa4d8;
 }
 
+img{
+    height: inherit;
+    width: inherit;
+}
 
 
 

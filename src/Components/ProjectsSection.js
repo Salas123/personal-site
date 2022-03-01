@@ -1,7 +1,12 @@
 import React from "react";
 import './ProjectsSection.css';
+import CardComponent from "./Cards/CardComponent";
 
 const ProjectsSection = () =>{
+
+
+
+
     return(
         <div className={'ProjectsSectionContainer'}>
             <div className={'ProjectsBoxContainer'}>
@@ -9,11 +14,20 @@ const ProjectsSection = () =>{
                     <h1 className={'ProjectsHeader'}>Projects</h1>
                 </div>
                 <div className={'ProjectsMiddleBoxContainer'}>
+                    <h2 className={'ProjectsSubHeader'}>Photography</h2>
                     <ul className={'ProjectsListWrapper'}>
-                        <li className={'ProjectsElement'}>Project1</li>
-                        <li className={'ProjectsElement'}>Project2</li>
-                        <li className={'ProjectsElement'}>Project3</li>
-                        <li className={'ProjectsElement'}>Project4</li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'brooklyn-apts1.jpeg'} alt={'apartments in brooklyn'} buttonText={'Full Image'}>Location: Brooklyn, NYC. Camera: Sony Alpha 6000.</CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'nyc-apartments1.jpeg'} alt={'apartments in nyc'} buttonText={'Full Image'}> Location: Manhattan, NYC. Camera: Sony Alpha 6000.</CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'nyc-street-art.jpeg'} alt={'mural in the nyc street'} buttonText={'Full Image'}> Location: Manhattan, NYC. Camera: Sony Alpha 6000.</CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'sheep-england.jpeg'} alt={'sheep near stone hedge'} buttonText={'Full Image'}>Location: Stone Hedge, England. Camera: Sony Alpha 6000.</CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'barcelona-streets.jpeg'} alt={'streets of barcelona'} buttonText={'Full Image'}> Location: Barcelona, Spain. Camera: Sony Alpha 6000.</CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'barcelona-overview.jpeg'} alt={'overview of Barcelona'} buttonText={'Full Image'}> Location: Barcelona, Spain. Camera: Sony Alpha 6000.</CardComponent></li>
+                    </ul>
+                    <h2 className={'ProjectsSubHeader'}>Engineering</h2>
+                    <ul className={'ProjectsListWrapper'}>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'smartTripodApp.png'} alt={'virtual snapshot of ui'} buttonText={'Github Repo'}> Project: Smart Tripod. Purpose: Wirelessly Controlling How You Capture Photos </CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'scheduler.png'} alt={'scheduler initial ui'} buttonText={'Github Repo'}> Project: Scheduler. Purpose: Optimizing Schedules for the Emergency Room Department </CardComponent></li>
+
                     </ul>
                 </div>
                 <div className={'ProjectsBottomBoxContainer'}>

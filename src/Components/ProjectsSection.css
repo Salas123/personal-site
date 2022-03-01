@@ -1,7 +1,6 @@
 .ProjectsSectionContainer{
     background-color: #7FA5CC;
-    margin: 0;
-    height: 700px;
+    height: fit-content;
 }
 
 .ProjectsHeader{
@@ -22,22 +21,37 @@
     margin: auto;
 }
 
-.ProjectsElement{
-    height: 150px;
-    width: 300px;
-    background-color: lime;
+.ProjectsSubHeader{
+    color: #ffffff;
+    margin-left: 25px;
 }
 
-@media screen and (max-width: 1660px) {
+.ProjectsBottomBoxContainer{
+    height: 50px;
+}
+
+
+.ProjectsElement{
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 2126px) {
     .ProjectsListWrapper {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
+@media screen and (max-width: 1605px) {
+    .ProjectsListWrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media screen and (max-width: 1036px) {
     .ProjectsListWrapper{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         margin: auto;
         justify-items: center;
     }
