@@ -1,6 +1,7 @@
 .ButtonNoIconContainer{
     margin-top: 10px;
     align-self: center;
+    text-align: center;
     background-color: coral;
     height: 40px;
     width: 100px;

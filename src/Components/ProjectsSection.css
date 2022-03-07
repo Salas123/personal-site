@@ -1,5 +1,5 @@
 .ProjectsSectionContainer{
-    background-color: #7FA5CC;
+    background-color: transparent;
     height: fit-content;
 }
 
@@ -24,6 +24,7 @@
 .ProjectsSubHeader{
     color: #ffffff;
     margin-left: 25px;
+    font-size: 50px;
 }
 
 .ProjectsBottomBoxContainer{

@@ -1,5 +1,5 @@
 .AboutMeSectionContainer{
-    background: #6f6f68;
+    background: transparent;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -34,7 +34,6 @@
 
 
 .AboutMeParagraphHeader{
-    margin: 0;
     margin-bottom: 10px;
     align-self: flex-start;
     font-size: 60px;
@@ -50,11 +49,16 @@
     justify-content: center;
     align-self: center;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .ButtonHolder{
     width: 750px;
     margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
 }
 
@@ -63,7 +67,7 @@
         height: fit-content;
     }
     .AboutMeHeader{
-        font-size: 100px;
+        font-size: 135px;
     }
     .AboutMeParagraphHeader{
         font-size: 4vh;
@@ -90,8 +94,7 @@
 
 
 @media screen and (max-width: 896px) {
-    .AboutMeLeftContainer{
-    }
-    .AboutMeRightContainer{
+    .AboutMeTextWrapper{
+        padding: 0;
     }
 }

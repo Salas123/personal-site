@@ -3,7 +3,7 @@
 .IntroSectionContainer{
     display: flex;
     flex-direction: column;
-    background: #7FA5CC;
+    background: transparent;
     height: 800px;
     justify-content: center;
     width: 100%;
@@ -72,6 +72,10 @@
 
     .fullNameHeader{
         font-size: 100px;
+    }
+
+    .rightContainer{
+        margin-bottom: 50px;
     }
 }
 
