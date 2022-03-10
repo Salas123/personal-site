@@ -1,16 +1,85 @@
-import React from "react";
+import React, {useState} from "react";
 import './ContactMeSection.css';
 import ButtonIconComponent from "./Button/ButtonIconComponent";
 
-const ContactMeSection = () =>{
-    function adjustTextArea(e){
-        let message = e.target.value;
-        if(message.length > 0){
-            e.target.rows = 4;
-        }
-        else{
-            e.target.rows = 2;
-        }
+
+
+function ContactMeSection(){
+
+    const [form, setForm] = useState({
+        email: "",
+        fullName: "",
+        message: "",
+    });
+
+
+
+    function formVerification(){
+        if(form.fullName === '') {window.alert('Must Enter A Name, Would Love To Know Who I\'m Talking To!'); return false;}
+        if(form.email === "" || !emailVerification()){window.alert('Must enter an email!'); return false;}
+        if(form.message === "") {window.alert('Must enter a message, would love to hear what you have to say!'); return false;}
+
+        console.log('full name:%s email:%s message:%s', form.fullName, form.email, form.message);
+
+        return true;
+    }
+
+    function emailVerification() {
+        let email_str = form.email;
+        const email_arr = email_str.split('@');
+        return email_arr.length > 1;
+    }
+
+
+    function updateForm(value){
+        return setForm((prev) => {
+            return {...prev, ...value};
+            }
+        );
+    }
+
+    async function emailSend()
+    {
+
+        if(formVerification() === false)
+            return;
+
+
+        console.log('Email send button pressed!');
+
+        const newForm = {...form};
+
+        await fetch("http://localhost:5000/namesAndEmails/add",
+            {
+                method: "POST",
+                headers:{
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(newForm),
+            })
+            .catch(error =>{
+                console.log(error.toJSON);
+            })
+            .then((res) => console.log(res));
+
+
+        await fetch("http://localhost:5000/fullForm/add",
+            {
+                method: "POST",
+                headers:{
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(newForm),
+            })
+            .catch(error =>{
+                console.log(error.toJSON);
+            })
+            .then((res) => console.log(res));
+
+            setForm({fullName: "", email: "", message: ""});
+
+            console.log('fullName:%s, email:%s, message:%s ', form.fullName, form.email, form.message);
+
     }
 
     return(
@@ -25,14 +94,14 @@ const ContactMeSection = () =>{
                         <div className={'ContactMeBoxWrapper'}>
                             <form>
                                 <h2 className={'inputHeaders'}>Name</h2>
-                                <div className={'inputContainer'}><input className={'singleRowInput'} defaultValue={'John Doe'} type='text'/></div>
+                                <div className={'inputContainer'}><input className={'singleRowInput'} defaultValue={'John Doe'} type='text' onChange={e => updateForm({fullName: e.target.value.toString()})}/></div>
                                 <h2 className={'inputHeaders'}>Email</h2>
-                                <div className={'inputContainer'}><input className={'singleRowInput'} defaultValue={'JohnDoe@email.com'} type='text' /></div>
+                                <div className={'inputContainer'}><input className={'singleRowInput'} defaultValue={'JohnDoe@email.com'} type='text' onChange={e => updateForm({email: e.target.value.toString()})} /></div>
                                 <h2 className={'inputHeaders'}>Message</h2>
-                                <div className={'inputContainer'}><textarea className={'messageInput'} defaultValue={'Enter Message Here'}  rows={2} cols={50} onChange={adjustTextArea} /></div>
+                                <div className={'inputContainer'}><textarea className={'messageInput'} defaultValue={'Enter Message Here'}  rows={2} cols={50} onChange={e => updateForm({message: e.target.value.toString()})}/></div>
                             </form>
                             <div className={'ContactMeBottomRightPanel'}>
-                                <ButtonIconComponent buttonText={'Send Message'} src={'send-icon.svg'} alt={'send icon'}/>
+                                <ButtonIconComponent buttonText={'Send Message'} src={'send-icon.svg'} alt={'send icon'} onClick={emailSend}/>
                             </div>
                         </div>
                     </div>

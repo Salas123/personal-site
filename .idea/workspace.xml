@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4845ae8-068f-474e-9f2e-401a946725d4" name="Default Changelist" comment="" />
+    <list default="true" id="a4845ae8-068f-474e-9f2e-401a946725d4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/routes/full_form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/config.env" beforeDir="false" afterPath="$PROJECT_DIR$/server/config.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/routes/emails_and_names.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/emails_and_names.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Button/ButtonIconComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button/ButtonIconComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Button/ButtonIconComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button/ButtonIconComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Button/ButtonNoIconComponent.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button/ButtonNoIconComponent.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Button/CardButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Button/CardButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ContactMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ContactMeSection.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -82,9 +96,14 @@
         <script value="start" />
       </scripts>
       <node-interpreter value="project" />
+      <package-manager value="npm" />
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.npm start" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -158,7 +177,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/contact-me-layout-feature" />
+                        <option value="projects-dropdown-feature" />
                       </list>
                     </value>
                   </entry>

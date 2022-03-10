@@ -2,7 +2,7 @@ const express = require('express');
 
 const namesAndEmailsRoutes = express.Router();
 const dbo = require('../db/conn');
-const ObjectId = require('mongodb').ObjectId;
+// const ObjectId = require('mongodb').ObjectId;
 
 namesAndEmailsRoutes.route('/namesAndEmails').get(function (req, res){
     let db_connect = dbo.getDB('personal_site');
@@ -18,7 +18,7 @@ namesAndEmailsRoutes.route('/namesAndEmails').get(function (req, res){
 
 namesAndEmailsRoutes.route('/namesAndEmails/:email').get(function (req, res){
     let db_connect = dbo.getDB();
-    let myquery = {email: ObjectId( req.param.email)};
+    let myquery = {email: req.param.email};
 
     db_connect
         .collection('names_and_emails')
@@ -31,17 +31,20 @@ namesAndEmailsRoutes.route('/namesAndEmails/:email').get(function (req, res){
 
 namesAndEmailsRoutes.route('/namesAndEmails/add').post(function (req, response){
     let db_connect = dbo.getDB();
-    let myDoc = {
-        name: req.body.person_name,
+    let namesAndEmailsDoc = {
+        fullName: req.body.fullName,
         email: req.body.email,
     };
+
     db_connect
         .collection('names_and_emails')
-        .insertOne(myDoc, function (err, res){
+        .insertOne(namesAndEmailsDoc, function (err, res){
         if (err) throw err;
 
-        response.json(res);
+        console.log(response.json(res));
     });
+
+
 });
 
 module.exports = namesAndEmailsRoutes;

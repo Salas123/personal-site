@@ -3,7 +3,7 @@ import './ButtonIconComponent.css';
 
 const ButtonIconComponent = (props) => {
   return(
-      <div className={"buttonContainer"}>
+      <div className={"buttonContainer"} onClick={props.onClick}>
           <div className={"buttonTextContainer"}>
               <p className={"buttonText"}>{props.buttonText}</p>
           </div>

@@ -9,6 +9,8 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 app.use(require('./routes/emails_and_names'));
+app.use(require('./routes/full_form'));
+
 
 const dbo = require('./db/conn');
 

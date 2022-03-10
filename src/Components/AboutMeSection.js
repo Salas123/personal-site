@@ -2,7 +2,14 @@ import React from 'react';
 import './AboutMeSection.css';
 import ButtonIconComponent from "./Button/ButtonIconComponent";
 
-const AboutMeSection = () =>{
+
+
+function AboutMeSection(){
+
+    function download_resume(e) {
+        console.log('Download resume button pressed!');
+    }
+
     return(
         <div className={'AboutMeSectionContainer'}>
             <div className={'AboutMeTopContainer'}>
@@ -26,7 +33,7 @@ const AboutMeSection = () =>{
                 <div className={'AboutMeRightContainer'}>
                     <h1 className={'AboutMeHeader'}>About Me</h1>
                     <div className={'ButtonHolder'}>
-                        <ButtonIconComponent buttonText={'Download Resume'} src={'file-download-icon.svg'} alt={'download icon'}/>
+                        <ButtonIconComponent buttonText={'Download Resume'} src={'file-download-icon.svg'} alt={'download icon'} onClick={download_resume}/>
                     </div>
                 </div>
             </div>
