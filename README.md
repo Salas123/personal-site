@@ -12,18 +12,18 @@ This project is a dedication to creating a platform for self-promotion.
 
 ## Technology Used:
 
-###Frontend:
+- ###Frontend:
  - ReactJS
  - CSS
  - React Hooks
 
-###Backend:
+- ###Backend:
  - Cors (middleware)
  - Express (nodejs framework)
  - MongoDB (database)
  - NodeJS (language)
 
-###App Project Management:
+- ###App Project Management:
 - Git/Github
 - [Trello Boards](https://trello.com/personalwebsite75/account)
 - Adobe Illustrator (UI designing)
