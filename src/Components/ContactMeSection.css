@@ -71,6 +71,33 @@ form{
     text-align: center;
 }
 
+.ContactMeBoxWrapper-visible{
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    position: center;
+}
+
+.ContactMeBoxWrapper-invisible{
+    visibility: hidden;
+    position: absolute;
+}
+
+.ContactMeBoxConfirmation-visible{
+    text-align: center;
+    visibility: visible;
+
+}
+
+.ContactMeBoxConfirmation-invisible{
+    visibility: hidden;
+    position: absolute;
+}
+
+.ConfirmationIcon-visible{
+    height: 50px;
+    width: 50px;
+}
 .ContactMeFooter{
     width: 100%;
     text-align: center;
@@ -155,7 +182,7 @@ form{
         font-size: 135px;
     }
 
-    .ContactMeBoxWrapper{
+    .ContactMeBoxWrapper-visible{
         width: 95%;
         height: fit-content;
         align-self: center;
@@ -163,6 +190,9 @@ form{
         box-shadow: 0px 0px 10px 2px #0f0f0f;
     }
 
+    .ContactMeBoxWrapper-invisible{
+        visibility: hidden;
+    }
 
     .ContactMePanel{
         flex-direction: column;
@@ -174,6 +204,7 @@ form{
         width: 100%;
         height: fit-content;
     }
+
     .inputHeaders{
         margin-left: 25px;
     }

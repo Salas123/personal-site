@@ -13,6 +13,10 @@ function ContactMeSection(){
     });
 
 
+    const[formVisible, setFormVisible] = useState('-visible');
+    const[emailConfirmation, setEmailConfirmation] = useState('-invisible');
+
+
 
     function formVerification(){
         if(form.fullName === '') {window.alert('Must Enter A Name, Would Love To Know Who I\'m Talking To!'); return false;}
@@ -76,11 +80,14 @@ function ContactMeSection(){
             })
             .then((res) => console.log(res));
 
-            setForm({fullName: "", email: "", message: ""});
 
-            console.log('fullName:%s, email:%s, message:%s ', form.fullName, form.email, form.message);
+        setFormVisible('-invisible');
+        setEmailConfirmation('-visible');
+        setForm({fullName: "", message: "", email: ""});
+
 
     }
+
 
     return(
         <div className={'ContactMeSectionContainer'}>
@@ -90,21 +97,38 @@ function ContactMeSection(){
                         <h1 className={'ContactMeHeader'}>Contact Me</h1>
                         <img className={'contact-me-icon'} src={ 'contact-me-icon.svg'} alt={'Contact-Me-Icon'}/>
                     </div>
-                    <div className={'ContactMeRightPanel'}>
-                        <div className={'ContactMeBoxWrapper'}>
-                            <form>
-                                <h2 className={'inputHeaders'}>Name</h2>
-                                <div className={'inputContainer'}><input className={'singleRowInput'} defaultValue={'John Doe'} type='text' onChange={e => updateForm({fullName: e.target.value.toString()})}/></div>
-                                <h2 className={'inputHeaders'}>Email</h2>
-                                <div className={'inputContainer'}><input className={'singleRowInput'} defaultValue={'JohnDoe@email.com'} type='text' onChange={e => updateForm({email: e.target.value.toString()})} /></div>
-                                <h2 className={'inputHeaders'}>Message</h2>
-                                <div className={'inputContainer'}><textarea className={'messageInput'} defaultValue={'Enter Message Here'}  rows={2} cols={50} onChange={e => updateForm({message: e.target.value.toString()})}/></div>
-                            </form>
-                            <div className={'ContactMeBottomRightPanel'}>
-                                <ButtonIconComponent buttonText={'Send Message'} src={'send-icon.svg'} alt={'send icon'} onClick={emailSend}/>
+                        <div className={'ContactMeRightPanel'}>
+                            <div className={'ContactMeBoxWrapper' + formVisible}>
+                                <form>
+                                    <h2 className={'inputHeaders'}>Name</h2>
+                                    <div className={'inputContainer'}><input className={'singleRowInput'}
+                                                                             defaultValue={'John Doe'} type='text'
+                                                                             onChange={e => updateForm({fullName: e.target.value.toString()})}/>
+                                    </div>
+                                    <h2 className={'inputHeaders'}>Email</h2>
+                                    <div className={'inputContainer'}><input className={'singleRowInput'}
+                                                                             defaultValue={'JohnDoe@email.com'} type='text'
+                                                                             onChange={e => updateForm({email: e.target.value.toString()})}/>
+                                    </div>
+                                    <h2 className={'inputHeaders'}>Message</h2>
+                                    <div className={'inputContainer'}><textarea className={'messageInput'}
+                                                                                defaultValue={'Enter Message Here'} rows={2}
+                                                                                cols={50}
+                                                                                onChange={e => updateForm({message: e.target.value.toString()})}/>
+                                    </div>
+                                </form>
+                                <div className={'ContactMeBottomRightPanel'}>
+                                    <ButtonIconComponent buttonText={'Send Message'} src={'send-icon.svg'} alt={'send icon'}
+                                                         onClick={emailSend}/>
+                                </div>
                             </div>
-                        </div>
+
+                            <div className={'ContactMeBoxConfirmation' + emailConfirmation}>
+                                <p>Thank you for your submission! Can't wait to read it and I'll get back to you ASAP!</p>
+                                <img className={'ConfirmationIcon' + emailConfirmation} src={'glasses-face.svg'} alt={'icon with glasses'}/>
+                            </div>
                     </div>
+
                 </div>
                 <div className={'ContactMeFooter'}>
                     <p className={'socials-text'}>Checkout my socials!</p>
