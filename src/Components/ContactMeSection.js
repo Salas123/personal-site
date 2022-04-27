@@ -45,40 +45,13 @@ function ContactMeSection(){
     async function emailSend()
     {
 
-        if(formVerification() === false)
+        if(formVerification() === false){
+            console.log('Form verification failed... check input forms')
             return;
+        }
 
 
         console.log('Email send button pressed!');
-
-        const newForm = {...form};
-
-        await fetch("http://localhost:5000/namesAndEmails/add",
-            {
-                method: "POST",
-                headers:{
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(newForm),
-            })
-            .catch(error =>{
-                console.log(error.toJSON);
-            })
-            .then((res) => console.log(res));
-
-
-        await fetch("http://localhost:5000/fullForm/add",
-            {
-                method: "POST",
-                headers:{
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(newForm),
-            })
-            .catch(error =>{
-                console.log(error.toJSON);
-            })
-            .then((res) => console.log(res));
 
 
         setFormVisible('-invisible');
