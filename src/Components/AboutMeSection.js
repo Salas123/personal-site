@@ -1,13 +1,18 @@
 import React from 'react';
 import './AboutMeSection.css';
 import ButtonIconComponent from "./Button/ButtonIconComponent";
-
+import {API} from 'aws-amplify';
 
 
 function AboutMeSection(){
+    let drive_urls = []
+    async function download_resume() {
+        await API.get('DownloadResumeAPI', '/downloadresume',{})
+            .then(res =>{drive_urls = [...res.drive_url];})
+            .catch(err => {console.error(err);});
 
-    function download_resume(e) {
-        console.log('Download resume button pressed!');
+        const resume_obj = drive_urls[0];
+        window.open(resume_obj.resume_url);
     }
 
     return(
