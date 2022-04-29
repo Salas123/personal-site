@@ -18,11 +18,6 @@ function ContactMeSection(){
     const[formVisible, setFormVisible] = useState('-visible');
     const[emailConfirmation, setEmailConfirmation] = useState('-invisible');
 
-    useEffect((callback) =>{
-        console.log(form);
-
-    })
-
 
     function formVerification(){
         if(form.fullName === '') {window.alert('Must Enter A Name, Would Love To Know Who I\'m Talking To!'); return false;}
