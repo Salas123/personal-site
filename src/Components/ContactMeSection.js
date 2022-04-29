@@ -1,29 +1,33 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import './ContactMeSection.css';
 import ButtonIconComponent from "./Button/ButtonIconComponent";
-
+import {API} from "aws-amplify";
 
 
 function ContactMeSection(){
+    let currentTimeStamp = new Date();
 
     const [form, setForm] = useState({
         email: "",
         fullName: "",
         message: "",
+        timeStamp: currentTimeStamp.toLocaleDateString(),
     });
 
 
     const[formVisible, setFormVisible] = useState('-visible');
     const[emailConfirmation, setEmailConfirmation] = useState('-invisible');
 
+    useEffect((callback) =>{
+        console.log(form);
+
+    })
 
 
     function formVerification(){
         if(form.fullName === '') {window.alert('Must Enter A Name, Would Love To Know Who I\'m Talking To!'); return false;}
         if(form.email === "" || !emailVerification()){window.alert('Must enter an email!'); return false;}
         if(form.message === "") {window.alert('Must enter a message, would love to hear what you have to say!'); return false;}
-
-        console.log('full name:%s email:%s message:%s', form.fullName, form.email, form.message);
 
         return true;
     }
@@ -56,6 +60,13 @@ function ContactMeSection(){
 
         setFormVisible('-invisible');
         setEmailConfirmation('-visible');
+
+        API.post('FormSubmissionAPI', '/formsubmission', {
+            body: {...form},
+        })
+            .then(res =>{console.log(res);})
+            .catch(err => {console.error(err);});
+
         setForm({fullName: "", message: "", email: ""});
 
 
