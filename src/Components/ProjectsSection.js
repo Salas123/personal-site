@@ -1,6 +1,7 @@
 import React from "react";
 import './ProjectsSection.css';
 import CardComponent from "./Cards/CardComponent";
+import CardButtonComponent from "./Cards/CardButtonComponent";
 
 const ProjectsSection = () =>{
 
@@ -25,8 +26,8 @@ const ProjectsSection = () =>{
                     </ul>
                     <h2 className={'ProjectsSubHeader'}>Engineering</h2>
                     <ul className={'ProjectsListWrapper'}>
-                        <li className={'ProjectsElement'}><CardComponent photoUrl={'smartTripodApp.png'} alt={'virtual snapshot of ui'} buttonText={'Github Repo'}> Project: Smart Tripod. Purpose: Wirelessly Controlling How You Capture Photos </CardComponent></li>
-                        <li className={'ProjectsElement'}><CardComponent photoUrl={'scheduler.png'} alt={'scheduler initial ui'} buttonText={'Github Repo'}> Project: Scheduler. Purpose: Optimizing Schedules for the Emergency Room Department </CardComponent></li>
+                        <li className={'ProjectsElement'}><CardButtonComponent photoUrl={'smartTripodApp.png'} alt={'virtual snapshot of ui'} buttonText={'Github Repo'} githubUrl={'https://github.com/Salas123/CS179J-Team10'}> Project: Smart Tripod. Purpose: Wirelessly Controlling How You Capture Photos </CardButtonComponent></li>
+                        <li className={'ProjectsElement'}><CardButtonComponent photoUrl={'scheduler.png'} alt={'scheduler initial ui'} buttonText={'Github Repo'} githubUrl={'https://github.com/Salas123/Medical-Scheduler'}> Project: Scheduler. Purpose: Optimizing Schedules for the Emergency Room Department </CardButtonComponent></li>
 
                     </ul>
                 </div>
