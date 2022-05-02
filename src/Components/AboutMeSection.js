@@ -7,7 +7,7 @@ import {API} from 'aws-amplify';
 function AboutMeSection(){
     let drive_urls = []
     async function download_resume() {
-        await API.get('downloadResumeAPI', '/downloadresume',{})
+        await API.get('DownloadResumeAPI', '/downloadresume',{})
             .then(res =>{drive_urls = [...res.drive_url];})
             .catch(err => {console.error(err);});
 
