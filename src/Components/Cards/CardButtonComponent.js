@@ -1,12 +1,14 @@
 import React from "react";
-import './CardComponent.css';
+import './CardButtonComponent.css';
+import CardButton from "../Button/CardButton";
 
-const CardComponent = (props) =>{
+const CardButtonComponent = (props) =>{
     return(
         <div className={'CardContainer'}>
             <div className={'cardOverlay'}/>
             <div className={'cardOverlayTextWrapper'}>
                 {props.children}
+                <CardButton buttonText={props.buttonText} link={props.githubUrl}/>
             </div>
             <div className={'imageCardContainer'}>
                 <img src={props.photoUrl} alt={props.alt}/>
@@ -16,4 +18,4 @@ const CardComponent = (props) =>{
 }
 
 
-export default CardComponent;
+export default CardButtonComponent;
