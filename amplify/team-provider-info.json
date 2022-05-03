@@ -1,0 +1,23 @@
+{
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-personalsitebackend-prod-193519-authRole",
+      "UnauthRoleArn": "arn:aws:iam::993000811373:role/amplify-personalsitebackend-prod-193519-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::993000811373:role/amplify-personalsitebackend-prod-193519-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-personalsitebackend-prod-193519-deployment",
+      "UnauthRoleName": "amplify-personalsitebackend-prod-193519-unauthRole",
+      "StackName": "amplify-personalsitebackend-prod-193519",
+      "StackId": "arn:aws:cloudformation:us-west-1:993000811373:stack/amplify-personalsitebackend-prod-193519/ad3dc6c0-ca89-11ec-be8b-02e1cdaa3de9",
+      "AmplifyAppId": "d1iq3hrncldg8r"
+    },
+    "categories": {
+      "function": {
+        "downloadResumeFunc": {
+          "deploymentBucketName": "amplify-personalsitebackend-prod-193519-deployment",
+          "s3Key": "amplify-builds/downloadResumeFunc-2f4f376b565463557270-build.zip"
+        }
+      }
+    }
+  }
+}

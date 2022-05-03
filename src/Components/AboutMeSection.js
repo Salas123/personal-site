@@ -7,12 +7,14 @@ import {API} from 'aws-amplify';
 function AboutMeSection(){
     let drive_urls = []
     async function download_resume() {
-        await API.get('DownloadResumeAPI', '/downloadresume',{})
-            .then(res =>{drive_urls = [...res.drive_url];})
-            .catch(err => {console.error(err);});
+        const api_results = await API.get('DownloadResumeAPI', '/downloadresume',{}).catch(err => {console.error(err);});
 
-        const resume_obj = drive_urls[0];
-        window.open(resume_obj.resume_url);
+        console.log(api_results);
+        if(!api_results.success)
+        {window.alert('I\'m sorry, I may not have the correct resume linked...' +
+                ' please include in your message for an update resume!')}
+        else
+            window.open(api_results.result);
     }
 
     return(
