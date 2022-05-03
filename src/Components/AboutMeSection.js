@@ -25,7 +25,7 @@ function AboutMeSection(){
                             My name is Jesus Salas II. I made this page initially as a resume buffer, however, upon further reflection I realize I
                             have the chance to create a platform around myself. I am proud to say that I graduated with my bachelors of science in computer science from
                             UC Riverside and along with graduating I worked on some great embedded systems projects as
-                            well as worked on some non-CS work like photography, and video editing. As I'm slowly progressing in my career with Software Engineering,
+                            well as worked on some non-CS work like photography,cl and video editing. As I'm slowly progressing in my career with Software Engineering,
                             I am also still working on other side projects.
                         </p>
                         <p className={'AboutMeParagraph'}>
