@@ -16,8 +16,8 @@
         "s3Key": {
             "Type": "String"
         }
-        
-    
+
+
     },
     "Conditions": {
         "ShouldNotCreateEnvResources": {
@@ -66,7 +66,14 @@
                 ]
             },
             "Environment": {
-                "Variables" : {"ENV":{"Ref":"env"},"REGION":{"Ref":"AWS::Region"}}
+                "Variables" :
+                {
+                    "ENV":{"Ref":"env"},
+                    "REGION":{"Ref":"AWS::Region"},
+                    "ATLAS_URI": "mongodb+srv://jesus:SpanishMonkey18@filecluster.3vcnp.mongodb.net/?retryWrites=true&w=majority",
+                    "MAIN_DB": "personal_site",
+                    "COLLECTION": "full_input_form"
+                }
             },
             "Role": { "Fn::GetAtt": ["LambdaExecutionRole", "Arn"] },
             "Runtime": "nodejs14.x",
@@ -134,8 +141,8 @@
                 }
             }
         }
-        
-        
+
+
     },
     "Outputs": {
         "Name": {
@@ -156,6 +163,6 @@
                 "Ref": "LambdaExecutionRole"
             }
         }
-        
+
     }
 }
