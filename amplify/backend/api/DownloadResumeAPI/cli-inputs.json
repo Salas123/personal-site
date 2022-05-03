@@ -7,6 +7,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/formsubmission": {
+      "name": "/formsubmission",
+      "lambdaFunction": "formSubmitFunc",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }
