@@ -16,6 +16,10 @@
         "downloadResumeFunc": {
           "deploymentBucketName": "amplify-personalsitebackend-prod-193519-deployment",
           "s3Key": "amplify-builds/downloadResumeFunc-2f4f376b565463557270-build.zip"
+        },
+        "formSubmitFunc": {
+          "deploymentBucketName": "amplify-personalsitebackend-prod-193519-deployment",
+          "s3Key": "amplify-builds/formSubmitFunc-366238486c4468336c37-build.zip"
         }
       },
       "hosting": {

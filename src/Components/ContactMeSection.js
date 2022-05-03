@@ -56,7 +56,7 @@ function ContactMeSection(){
         setFormVisible('-invisible');
         setEmailConfirmation('-visible');
 
-        API.post('FormSubmissionAPI', '/formsubmission', {
+        API.post('DownloadResumeAPI', '/formsubmission', {
             body: {...form},
         })
             .then(res =>{console.log(res);})
