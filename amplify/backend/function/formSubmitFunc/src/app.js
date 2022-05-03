@@ -15,6 +15,7 @@ const awsServerlessExpressMiddleware = require('aws-serverless-express/middlewar
 
 // declare a new express app
 const app = express()
+const dbConn = require('./dbConn');
 app.use(bodyParser.json())
 app.use(awsServerlessExpressMiddleware.eventContext())
 
@@ -46,7 +47,9 @@ app.get('/formsubmission/*', function(req, res) {
 
 app.post('/formsubmission', function(req, res) {
   // Add your code here
-  res.json({success: 'post call succeed!', url: req.url, body: req.body})
+  dbConn.postQueryToDB(this,this, req.body)
+      .then(response =>{res.json({success: 'Query to DB was a success!', queryAcknowledgment: response})})
+      .catch(err => {res.json({failure: 'Query was not successful!', errorMessage: err.toString()})});
 });
 
 app.post('/formsubmission/*', function(req, res) {
