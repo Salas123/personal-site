@@ -10,7 +10,7 @@ const IntroSection = () => {
                     <p  className={"personParaDescriptor"}>Software Engineer / Photographer</p>
                 </div>
                 <div className={"rightContainer"}>
-                    <img className={'profilePic'} src={'profilePic.png'} alt="profile pic"></img>
+                    <img className={'profilePic'} src={'artifacts/profilePic.png'} alt="profile pic"></img>
                 </div>
             </div>
         </div>

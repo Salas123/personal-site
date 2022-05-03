@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import './ContactMeSection.css';
 import ButtonIconComponent from "./Button/ButtonIconComponent";
 import {API} from "aws-amplify";
@@ -74,7 +74,7 @@ function ContactMeSection(){
                 <div className={'ContactMePanel'}>
                     <div className={'ContactMeLeftPanel'}>
                         <h1 className={'ContactMeHeader'}>Contact Me</h1>
-                        <img className={'contact-me-icon'} src={ 'contact-me-icon.svg'} alt={'Contact-Me-Icon'}/>
+                        <img className={'contact-me-icon'} src={ 'artifacts/contact-me-icon.svg'} alt={'Contact-Me-Icon'}/>
                     </div>
                         <div className={'ContactMeRightPanel'}>
                             <div className={'ContactMeBoxWrapper' + formVisible}>
@@ -97,14 +97,14 @@ function ContactMeSection(){
                                     </div>
                                 </form>
                                 <div className={'ContactMeBottomRightPanel'}>
-                                    <ButtonIconComponent buttonText={'Send Message'} src={'send-icon.svg'} alt={'send icon'}
+                                    <ButtonIconComponent buttonText={'Send Message'} src={'artifacts/send-icon.svg'} alt={'send icon'}
                                                          onClick={emailSend}/>
                                 </div>
                             </div>
 
                             <div className={'ContactMeBoxConfirmation' + emailConfirmation}>
                                 <p>Thank you for your submission! Can't wait to read it and I'll get back to you ASAP!</p>
-                                <img className={'ConfirmationIcon' + emailConfirmation} src={'glasses-face.svg'} alt={'icon with glasses'}/>
+                                <img className={'ConfirmationIcon' + emailConfirmation} src={'artifacts/glasses-face.svg'} alt={'icon with glasses'}/>
                             </div>
                     </div>
 
@@ -112,10 +112,10 @@ function ContactMeSection(){
                 <div className={'ContactMeFooter'}>
                     <p className={'socials-text'}>Checkout my socials!</p>
                     <div className={'icon-wrapper'}>
-                        <a href={'https://www.instagram.com/chipsnsalas/'} className={'socialIcons'}><img src={'insta-icon.svg'} alt={'Instagram logo'} className={'icons'}/></a>
-                        <a href={'https://www.linkedin.com/in/jesus-salas-a295a07a/'} className={'socialIcons'}><img src={'linkedIn-icon.svg'} alt={'LinkedIn logo'} className={'icons'}/></a>
-                        <a href={'https://twitter.com/Jesus_Salads'} className={'socialIcons'}><img src={'twitter-icon.svg'} alt={'Twitter logo'} className={'icons'}/></a>
-                        <a href={'https://github.com/Salas123'} className={'socialIcons'}><img src={'github-icon.svg'} alt={'Github logo'} className={'icons'}/></a>
+                        <a href={'https://www.instagram.com/chipsnsalas/'} className={'socialIcons'}><img src={'artifacts/insta-icon.svg'} alt={'Instagram logo'} className={'icons'}/></a>
+                        <a href={'https://www.linkedin.com/in/jesus-salas-a295a07a/'} className={'socialIcons'}><img src={'artifacts/linkedIn-icon.svg'} alt={'LinkedIn logo'} className={'icons'}/></a>
+                        <a href={'https://twitter.com/Jesus_Salads'} className={'socialIcons'}><img src={'artifacts/twitter-icon.svg'} alt={'Twitter logo'} className={'icons'}/></a>
+                        <a href={'https://github.com/Salas123'} className={'socialIcons'}><img src={'artifacts/github-icon.svg'} alt={'Github logo'} className={'icons'}/></a>
                     </div>
                 </div>
             </div>

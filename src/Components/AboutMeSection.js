@@ -5,7 +5,6 @@ import {API} from 'aws-amplify';
 
 
 function AboutMeSection(){
-    let drive_urls = []
     async function download_resume() {
         const api_results = await API.get('DownloadResumeAPI', '/downloadresume',{}).catch(err => {console.error(err);});
 
@@ -40,7 +39,7 @@ function AboutMeSection(){
                 <div className={'AboutMeRightContainer'}>
                     <h1 className={'AboutMeHeader'}>About Me</h1>
                     <div className={'ButtonHolder'}>
-                        <ButtonIconComponent buttonText={'Download Resume'} src={'file-download-icon.svg'} alt={'download icon'} onClick={download_resume}/>
+                        <ButtonIconComponent buttonText={'Download Resume'} src={'artifacts/file-download-icon.svg'} alt={'download icon'} onClick={download_resume}/>
                     </div>
                 </div>
             </div>

@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4845ae8-068f-474e-9f2e-401a946725d4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a4845ae8-068f-474e-9f2e-401a946725d4" name="Default Changelist" comment="added a new card component without a button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/barcelona-overview.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/barcelona-overview.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/barcelona-streets.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/barcelona-streets.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/brooklyn-apts1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/brooklyn-apts1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/contact-me-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/contact-me-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/down-arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/down-arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/file-download-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/file-download-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/github-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/github-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/glasses-face.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/glasses-face.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/happy-face.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/happy-face.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/insta-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/insta-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/linkedIn-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/linkedIn-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/nyc-apartments1.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/nyc-apartments1.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/nyc-street-art.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/nyc-street-art.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/profilePic-old.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/profilePic-old.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/profilePic.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/profilePic.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scheduler.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/scheduler.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/send-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/send-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/sheep-england.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/sheep-england.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/smartTripodApp.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/smartTripodApp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/twitter-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/artifacts/twitter-icon.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/AboutMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/AboutMeSection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ContactMeSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ContactMeSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/IntroSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/IntroSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/ProjectsSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ProjectsSection.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,21 +75,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path" value="node" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/jesussalas/WebstormProjects/personal-site",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "yarn",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -80,11 +93,11 @@
       <recent name="$PROJECT_DIR$/src/assests/cardImages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/artifacts" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/v1.1.1" />
       <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/src/assests/backgroundImages" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -157,7 +170,25 @@
       <workItem from="1645130133456" duration="46317000" />
       <workItem from="1645820313806" duration="12261000" />
       <workItem from="1646092344877" duration="3365000" />
+      <workItem from="1651161332342" duration="12845000" />
+      <workItem from="1651506372216" duration="2024000" />
+      <workItem from="1651511066976" duration="26857000" />
     </task>
+    <task id="LOCAL-00001" summary="added a new card component without a button">
+      <created>1651522140152</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1651522140152</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added a new card component without a button">
+      <created>1651522188875</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1651522188876</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +221,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added a new card component without a button" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a new card component without a button" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -17,17 +17,17 @@ const ProjectsSection = () =>{
                 <div className={'ProjectsMiddleBoxContainer'}>
                     <h2 className={'ProjectsSubHeader'}>Photography</h2>
                     <ul className={'ProjectsListWrapper'}>
-                        <li className={'ProjectsElement'}><CardComponent photoUrl={'brooklyn-apts1.jpeg'} alt={'apartments in brooklyn'} buttonText={'Full Image'}>Location: Brooklyn, NYC. Camera: Sony Alpha 6000.</CardComponent></li>
-                        <li className={'ProjectsElement'}><CardComponent photoUrl={'nyc-apartments1.jpeg'} alt={'apartments in nyc'} buttonText={'Full Image'}> Location: Manhattan, NYC. Camera: Sony Alpha 6000.</CardComponent></li>
-                        <li className={'ProjectsElement'}><CardComponent photoUrl={'nyc-street-art.jpeg'} alt={'mural in the nyc street'} buttonText={'Full Image'}> Location: Manhattan, NYC. Camera: Sony Alpha 6000.</CardComponent></li>
-                        <li className={'ProjectsElement'}><CardComponent photoUrl={'sheep-england.jpeg'} alt={'sheep near stone hedge'} buttonText={'Full Image'}>Location: Stone Hedge, England. Camera: Sony Alpha 6000.</CardComponent></li>
-                        <li className={'ProjectsElement'}><CardComponent photoUrl={'barcelona-streets.jpeg'} alt={'streets of barcelona'} buttonText={'Full Image'}> Location: Barcelona, Spain. Camera: Sony Alpha 6000.</CardComponent></li>
-                        <li className={'ProjectsElement'}><CardComponent photoUrl={'barcelona-overview.jpeg'} alt={'overview of Barcelona'} buttonText={'Full Image'}> Location: Barcelona, Spain. Camera: Sony Alpha 6000.</CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'artifacts/brooklyn-apts1.jpeg'} alt={'apartments in brooklyn'} buttonText={'Full Image'}>Location: Brooklyn, NYC. Camera: Sony Alpha 6000.</CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'artifacts/nyc-apartments1.jpeg'} alt={'apartments in nyc'} buttonText={'Full Image'}> Location: Manhattan, NYC. Camera: Sony Alpha 6000.</CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'artifacts/nyc-street-art.jpeg'} alt={'mural in the nyc street'} buttonText={'Full Image'}> Location: Manhattan, NYC. Camera: Sony Alpha 6000.</CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'artifacts/sheep-england.jpeg'} alt={'sheep near stone hedge'} buttonText={'Full Image'}>Location: Stone Hedge, England. Camera: Sony Alpha 6000.</CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'artifacts/barcelona-streets.jpeg'} alt={'streets of barcelona'} buttonText={'Full Image'}> Location: Barcelona, Spain. Camera: Sony Alpha 6000.</CardComponent></li>
+                        <li className={'ProjectsElement'}><CardComponent photoUrl={'artifacts/barcelona-overview.jpeg'} alt={'overview of Barcelona'} buttonText={'Full Image'}> Location: Barcelona, Spain. Camera: Sony Alpha 6000.</CardComponent></li>
                     </ul>
                     <h2 className={'ProjectsSubHeader'}>Engineering</h2>
                     <ul className={'ProjectsListWrapper'}>
-                        <li className={'ProjectsElement'}><CardButtonComponent photoUrl={'smartTripodApp.png'} alt={'virtual snapshot of ui'} buttonText={'Github Repo'} githubUrl={'https://github.com/Salas123/CS179J-Team10'}> Project: Smart Tripod. Purpose: Wirelessly Controlling How You Capture Photos </CardButtonComponent></li>
-                        <li className={'ProjectsElement'}><CardButtonComponent photoUrl={'scheduler.png'} alt={'scheduler initial ui'} buttonText={'Github Repo'} githubUrl={'https://github.com/Salas123/Medical-Scheduler'}> Project: Scheduler. Purpose: Optimizing Schedules for the Emergency Room Department </CardButtonComponent></li>
+                        <li className={'ProjectsElement'}><CardButtonComponent photoUrl={'artifacts/smartTripodApp.png'} alt={'virtual snapshot of ui'} buttonText={'Github Repo'} githubUrl={'https://github.com/Salas123/CS179J-Team10'}> Project: Smart Tripod. Purpose: Wirelessly Controlling How You Capture Photos </CardButtonComponent></li>
+                        <li className={'ProjectsElement'}><CardButtonComponent photoUrl={'artifacts/scheduler.png'} alt={'scheduler initial ui'} buttonText={'Github Repo'} githubUrl={'https://github.com/Salas123/Medical-Scheduler'}> Project: Scheduler. Purpose: Optimizing Schedules for the Emergency Room Department </CardButtonComponent></li>
 
                     </ul>
                 </div>
