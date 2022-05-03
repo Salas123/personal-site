@@ -17,6 +17,12 @@
           "deploymentBucketName": "amplify-personalsitebackend-prod-193519-deployment",
           "s3Key": "amplify-builds/downloadResumeFunc-2f4f376b565463557270-build.zip"
         }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1iq3hrncldg8r",
+          "type": "manual"
+        }
       }
     }
   }
