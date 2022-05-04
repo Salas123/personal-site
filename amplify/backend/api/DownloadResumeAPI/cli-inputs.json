@@ -14,6 +14,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/notifyadmin": {
+      "name": "/notifyadmin",
+      "lambdaFunction": "notifyAdminFunc",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }

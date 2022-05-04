@@ -20,6 +20,10 @@
         "formSubmitFunc": {
           "deploymentBucketName": "amplify-personalsitebackend-prod-193519-deployment",
           "s3Key": "amplify-builds/formSubmitFunc-366238486c4468336c37-build.zip"
+        },
+        "notifyAdminFunc": {
+          "deploymentBucketName": "amplify-personalsitebackend-prod-193519-deployment",
+          "s3Key": "amplify-builds/notifyAdminFunc-51416d74473833534169-build.zip"
         }
       },
       "hosting": {
