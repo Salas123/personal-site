@@ -15,6 +15,7 @@ const awsServerlessExpressMiddleware = require('aws-serverless-express/middlewar
 
 // declare a new express app
 const app = express()
+const sendEmail = require('./sendGmail')
 app.use(bodyParser.json())
 app.use(awsServerlessExpressMiddleware.eventContext())
 
@@ -46,7 +47,9 @@ app.get('/notifyadmin/*', function(req, res) {
 
 app.post('/notifyadmin', function(req, res) {
   // Add your code here
-  res.json({success: 'post call succeed!', url: req.url, body: req.body})
+  sendEmail.sendMailHandler(this, this, req.body)
+      .then(response => {res.json({success: 'Gmail Success!', results: response.envelope})})
+      .catch(err =>{res.json({failure: 'Gmail failure! :/', errorMessage: err.toString()})})
 });
 
 app.post('/notifyadmin/*', function(req, res) {

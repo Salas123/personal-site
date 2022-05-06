@@ -49,17 +49,33 @@ function ContactMeSection(){
             return;
         }
 
-
-        console.log('Email send button pressed!');
-
-
         setFormVisible('-invisible');
         setEmailConfirmation('-visible');
 
         API.post('DownloadResumeAPI', '/formsubmission', {
             body: {...form},
         })
-            .then(res =>{console.log(res);})
+            .then(res =>{
+                console.log(res);
+
+
+                if(res.queryAcknowledgment){
+
+                    API.post('DownloadResumeAPI', '/notifyadmin',{
+                       body:{
+                           recipient: form.email,
+                           message: form.message,
+                           fullName: form.fullName
+                       }
+                    }).then(response => {
+                        console.log(response);
+
+                    }).catch(err =>{
+                        console.error(err)
+                    });
+                }
+
+            })
             .catch(err => {console.error(err);});
 
         setForm({fullName: "", message: "", email: ""});

@@ -23,7 +23,7 @@
         },
         "notifyAdminFunc": {
           "deploymentBucketName": "amplify-personalsitebackend-prod-193519-deployment",
-          "s3Key": "amplify-builds/notifyAdminFunc-51416d74473833534169-build.zip"
+          "s3Key": "amplify-builds/notifyAdminFunc-367067734f5841574b65-build.zip"
         }
       },
       "hosting": {
