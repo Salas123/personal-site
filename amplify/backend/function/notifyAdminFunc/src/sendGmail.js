@@ -22,7 +22,7 @@ module.exports.sendMailHandler = async function(event, context, emailData){
 
     const fromBody = 'JSII.page <' + process.env.ADMIN_EMAIL + '>'
     const text = 'Hello ' + emailData.fullName  + ', Thank you for your message! This is sent as an automated response just to let you know I received your inquiry. I\'ll get back to you as soon as I can.'
-    const messageBody = '<h2>Hello, ' + emailData.fullName + '</h2><p>Thank you for your message! ' +
+    const messageBody = '<h2>Hello ' + emailData.fullName + ',</h2><p>Thank you for your message! ' +
         'This is sent as an automated response just to let you know I received your inquiry. I\'ll get back to you as soon as I can.</p>';
 
     const mailOptions = {
