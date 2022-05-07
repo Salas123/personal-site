@@ -21,6 +21,13 @@
       "permissions": {
         "setting": "open"
       }
+    },
+    "/notifyclient": {
+      "name": "/notifyclient",
+      "lambdaFunction": "notifyClientFunc",
+      "permissions": {
+        "setting": "open"
+      }
     }
   }
 }
