@@ -69,7 +69,12 @@
             },
             "REGION": {
               "Ref": "AWS::Region"
-            }
+            },
+            "ADMIN_EMAIL": "admin@jsii.page",
+            "CLIENT_ID": "300062731166-id4pa7m2448hdgsj178affbmvf657i29.apps.googleusercontent.com",
+            "CLIENT_SECRET": "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",
+            "REDIRECT_URI": "https://developers.google.com/oauthplayground",
+            "REFRESH_TOKEN": "1//04qANW4pvDo3zCgYIARAAGAQSNgF-L9IrUfqWb94_tlF5u_8O4GKJBXqPuWGgtC7xTroQ8aBJxdc4MZH6gx0fkSf5EFMXi-xy3A"
           }
         },
         "Role": {

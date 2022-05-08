@@ -1,6 +1,7 @@
 const nodeMailer = require('nodemailer');
 const {google} = require('googleapis');
 
+
 const oAuth2Client = new google.auth.OAuth2(process.env.CLIENT_ID, process.env.CLIENT_SECRET, process.env.REDIRECT_URI);
 oAuth2Client.setCredentials({refresh_token: process.env.REFRESH_TOKEN});
 
@@ -20,14 +21,15 @@ module.exports.sendMailHandler = async function(event, context, emailData){
 
         });
 
-    const fromBody = emailData.fullName;
-    const text = 'Name: ' + emailData.fullName + 'email: ' + emailData.recipient + 'message: ' +emailData.message
-    const messageBody = '<p> Name: ' + emailData.fullName + '</p>' + '<p> email: ' + emailData.recipient + '</p>'  + '<p> Message: ' + emailData.message + '</p>' ;
+    const fromBody = 'JSII.page <' + process.env.ADMIN_EMAIL + '>'
+    const text = 'Hello ' + emailData.fullName  + ', Thank you for your message! This is sent as an automated response just to let you know I received your inquiry. I\'ll get back to you as soon as I can.'
+    const messageBody = '<h2>Hello ' + emailData.fullName + ',</h2><p>Thank you for your message! ' +
+        'This is sent as an automated response just to let you know I received your inquiry. I\'ll get back to you as soon as I can.</p>';
 
     const mailOptions = {
         from: fromBody,
-        to: process.env.ADMIN_EMAIL,
-        subject: 'Message From: ' + emailData.fullName,
+        to: emailData.recipient,
+        subject: '[Automated Response]',
         text: text,
         html: messageBody,
     };

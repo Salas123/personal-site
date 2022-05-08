@@ -61,12 +61,26 @@ function ContactMeSection(){
 
                 if(res.queryAcknowledgment){
 
-                    API.post('DownloadResumeAPI', '/notifyadmin',{
+                    API.post('DownloadResumeAPI', '/notifyclient',{
                        body:{
                            recipient: form.email,
                            message: form.message,
                            fullName: form.fullName
                        }
+                    }).then(response => {
+                        console.log(response);
+
+                    }).catch(err =>{
+                        console.error(err)
+                    });
+
+
+                    API.post('DownloadResumeAPI', '/notifyadmin',{
+                        body:{
+                            recipient: form.email,
+                            message: form.message,
+                            fullName: form.fullName
+                        }
                     }).then(response => {
                         console.log(response);
 
