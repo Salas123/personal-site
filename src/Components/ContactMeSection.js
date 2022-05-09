@@ -111,17 +111,17 @@ function ContactMeSection(){
                                 <form>
                                     <h2 className={'inputHeaders'}>Name</h2>
                                     <div className={'inputContainer'}><input className={'singleRowInput'}
-                                                                             defaultValue={'John Doe'} type='text'
+                                                                             placeholder={'John Doe'} type='text'
                                                                              onChange={e => updateForm({fullName: e.target.value.toString()})}/>
                                     </div>
                                     <h2 className={'inputHeaders'}>Email</h2>
                                     <div className={'inputContainer'}><input className={'singleRowInput'}
-                                                                             defaultValue={'JohnDoe@email.com'} type='text'
+                                                                             placeholder={'JohnDoe@email.com'} type='text'
                                                                              onChange={e => updateForm({email: e.target.value.toString()})}/>
                                     </div>
                                     <h2 className={'inputHeaders'}>Message</h2>
                                     <div className={'inputContainer'}><textarea className={'messageInput'}
-                                                                                defaultValue={'Enter Message Here'} rows={2}
+                                                                                placeholder={'Enter Message Here'} rows={2}
                                                                                 cols={50}
                                                                                 onChange={e => updateForm({message: e.target.value.toString()})}/>
                                     </div>
