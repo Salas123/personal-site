@@ -27,7 +27,7 @@ const ProjectsSection = () =>{
                     <h2 className={'ProjectsSubHeader'}>Engineering</h2>
                     <ul className={'ProjectsListWrapper'}>
                         <li className={'ProjectsElement'}><CardButtonComponent photoUrl={'artifacts/smartTripodApp.png'} alt={'virtual snapshot of ui'} buttonText={'Github Repo'} githubUrl={'https://github.com/Salas123/CS179J-Team10'}> Project: Smart Tripod. Purpose: Wirelessly Controlling How You Capture Photos </CardButtonComponent></li>
-                        <li className={'ProjectsElement'}><CardButtonComponent photoUrl={'artifacts/scheduler.png'} alt={'scheduler initial ui'} buttonText={'Github Repo'} githubUrl={'https://github.com/Salas123/Medical-Scheduler'}> Project: Scheduler. Purpose: Optimizing Schedules for the Emergency Room Department </CardButtonComponent></li>
+                        <li className={'ProjectsElement'}><CardButtonComponent photoUrl={'artifacts/scheduler-display-1.png'} alt={'scheduler display'} buttonText={'Github Repo'} githubUrl={'https://github.com/Salas123/Medical-Scheduler'}> Project: Scheduler. Purpose: Optimizing Schedules for the Emergency Room Department (Local Desktop App) </CardButtonComponent></li>
 
                     </ul>
                 </div>
