@@ -2,8 +2,8 @@ const {MongoClient} = require('mongodb');
 
 const clientPromise = new MongoClient(process.env.ATLAS_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 const client = clientPromise.connect();
-module.exports.getUrlHandler = async function(event, context){
 
+module.exports.getUrlHandler = async function(event, context){
 
     const clientConn = await client;
 
@@ -15,6 +15,5 @@ module.exports.getUrlHandler = async function(event, context){
         return 'File does not exist anymore';
 
     return results[0].resume_url;
-
 
 }

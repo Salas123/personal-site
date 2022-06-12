@@ -70,7 +70,7 @@
             "REGION": {
               "Ref": "AWS::Region"
             },
-            "ATLAS_URI": "mongodb+srv://jesus:SpanishMonkey18@filecluster.3vcnp.mongodb.net/?retryWrites=true&w=majority",
+            "ATLAS_URI": "mongodb+srv://jesus:z0vkuejDNNAyVrgz@filecluster.3vcnp.mongodb.net/?retryWrites=true&w=majority",
             "MAIN_DB": "personal_site",
             "COLLECTION": "full_input_form"
           }
