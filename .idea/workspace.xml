@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4845ae8-068f-474e-9f2e-401a946725d4" name="Default Changelist" comment="added a new card component without a button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/backend/backend-config.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/backend/backend-config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/amplify/team-provider-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/amplify/team-provider-info.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,16 +56,17 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/jesussalas/WebstormProjects/personal-site&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/artifacts" />
+      <recent name="$PROJECT_DIR$/amplify/backend/function/notifyClientFunc/src" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/images/cardImages" />
       <recent name="$PROJECT_DIR$/src/assests/projectImages" />
-      <recent name="$PROJECT_DIR$/src/assests/backgroundImages" />
-      <recent name="$PROJECT_DIR$/src/assests/cardImages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public/artifacts" />
@@ -150,6 +149,12 @@
       <workItem from="1651161332342" duration="12845000" />
       <workItem from="1651506372216" duration="2024000" />
       <workItem from="1651511066976" duration="27509000" />
+      <workItem from="1653675693768" duration="930000" />
+      <workItem from="1653678426131" duration="451000" />
+      <workItem from="1653883957787" duration="460000" />
+      <workItem from="1653884462551" duration="170000" />
+      <workItem from="1653965511209" duration="330000" />
+      <workItem from="1655049840486" duration="350000" />
     </task>
     <task id="LOCAL-00001" summary="added a new card component without a button">
       <created>1651522140152</created>
@@ -187,7 +192,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="projects-dropdown-feature" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
