@@ -17,6 +17,7 @@ const awsServerlessExpressMiddleware = require('aws-serverless-express/middlewar
 const app = express()
 
 const sendEmail = require('./sendGmail');
+const sendGridEmail = require('./sendGridAPI');
 app.use(bodyParser.json())
 app.use(awsServerlessExpressMiddleware.eventContext())
 
@@ -48,11 +49,15 @@ app.get('/notifyclient/*', function(req, res) {
 
 app.post('/notifyclient', function(req, res) {
   // Add your code here
-  sendEmail.sendMailHandler(this, this, req.body)
-      .then(response => {res.json({success: 'Gmail Success!', results: response.envelope})
+  // sendEmail.sendMailHandler(this, this, req.body)
+  //     .then(response => {res.json({success: 'Gmail Success!', results: response.envelope})
+  //
+  //     })
+  //     .catch(err =>{res.json({failure: 'Gmail failure! :/', errorMessage: err.toString()})})
 
-      })
-      .catch(err =>{res.json({failure: 'Gmail failure! :/', errorMessage: err.toString()})})
+  sendGridEmail.SendGridEmail(this, this, req.body).then(response => {res.json({success: 'This POST request was a success!', sendGridMessage: response})})
+      .catch(err => {res.json({failure: 'This POST request was not successful!', errorMessage: err.toString()})})
+
 });
 
 app.post('/notifyclient/*', function(req, res) {
@@ -88,7 +93,7 @@ app.delete('/notifyclient/*', function(req, res) {
   res.json({success: 'delete call succeed!', url: req.url});
 });
 
-app.listen(3000, function() {
+app.listen(5000, function() {
     console.log("App started")
 });
 

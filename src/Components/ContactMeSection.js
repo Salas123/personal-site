@@ -63,7 +63,7 @@ function ContactMeSection(){
 
                     API.post('DownloadResumeAPI', '/notifyclient',{
                        body:{
-                           recipient: form.email,
+                           email: form.email,
                            message: form.message,
                            fullName: form.fullName
                        }
