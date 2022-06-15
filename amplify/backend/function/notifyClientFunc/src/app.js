@@ -55,6 +55,7 @@ app.post('/notifyclient', function(req, res) {
   //     })
   //     .catch(err =>{res.json({failure: 'Gmail failure! :/', errorMessage: err.toString()})})
 
+
   sendGridEmail.SendGridEmail(this, this, req.body).then(response => {res.json({success: 'This POST request was a success!', sendGridMessage: response})})
       .catch(err => {res.json({failure: 'This POST request was not successful!', errorMessage: err.toString()})})
 

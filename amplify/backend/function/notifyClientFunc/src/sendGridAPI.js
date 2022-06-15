@@ -17,7 +17,7 @@ module.exports.SendGridEmail = async function(event, context, payload){
                 email: 'admin@jsii.page',
                 name: 'JSII'
         },
-        template_id: 'd-a0dc6191b9664a17bada8d6636709ba2'
+        template_id: process.env.TEMPLATE_ID
 
     };
 

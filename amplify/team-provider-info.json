@@ -27,7 +27,7 @@
         },
         "notifyClientFunc": {
           "deploymentBucketName": "amplify-personalsitebackend-prod-193519-deployment",
-          "s3Key": "amplify-builds/notifyClientFunc-7958624533696573584f-build.zip"
+          "s3Key": "amplify-builds/notifyClientFunc-4a696349693943504a71-build.zip"
         }
       },
       "hosting": {
