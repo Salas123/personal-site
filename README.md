@@ -1,5 +1,7 @@
 # Personal Website
 
+url: https://jsii.page
+
 This project is a dedication to creating a platform for self-promotion.
 
 ## Page Components:
